@@ -31,3 +31,10 @@ var sum =num1+num2;  // it will do addition of numbers
 console.log("The sum of two numbers is -"+sum)
 //alert("The sum of two numbers is -"+sum)  + is used for joining the two parts
 //document.write(sum);
+
+// functions ------------------>
+
+
+function  calculateSum(){
+
+}
