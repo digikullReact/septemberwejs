@@ -26,6 +26,8 @@ var num2=3;
 
 var sum =num1+num2;  // it will do addition of numbers 
 
+//var  =
+
 
 // Techniques to see the output in the browser
 console.log("The sum of two numbers is -"+sum)
