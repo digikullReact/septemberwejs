@@ -180,3 +180,24 @@ function checkIfevenNumber(number){
 //console.log(checkIfevenNumber(73));
 
 // Write  a function to check whether the number is  divisible by 11 
+
+// Write a function that takes two numbers,calculate the sum of the numbers in function
+// If the sum of the number is even return "Doggo"
+// IF the sum of the number is odd return "Catto"
+
+
+//---Write a function that takes fruitnames ,if fruitname is apple return applejuice
+// if the fruit is orange return not apple juice
+
+function shivamExam(percentage){
+    if(percentage > 90 ){
+        console.log("shivam gets a bike")
+    }else{
+        console.log("shivam gets bashed")
+
+    }
+
+
+
+
+}
