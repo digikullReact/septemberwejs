@@ -62,9 +62,21 @@ for (var basket=0 ;  basket<=100  ; basket=basket+apple){
 // do the fizzbuzz problem for numbers from 1 to 1000;
 
 // i=i+1  --->i++ (post increment operator)  // z++ 
-
+/*
 for(var i=0;i<1000;i++){
 
     FizzBuzzCorrect(i);
 
 }
+*/
+
+
+
+for  (var apples=0; apples<=100; apples=apples+1) {
+    // logic or the function you want to repeat 
+    console.log("Go to tree pick up the apple")
+
+}
+
+
+console.log("Ezited------")
