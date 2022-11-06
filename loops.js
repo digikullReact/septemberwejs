@@ -59,4 +59,12 @@ for (var basket=0 ;  basket<=100  ; basket=basket+apple){
 }
 
 //console.log("exited from orchid");
-// do the fizzbuzz problem for numbers from 1 to 10000;
+// do the fizzbuzz problem for numbers from 1 to 1000;
+
+// i=i+1  --->i++ (post increment operator)  // z++ 
+
+for(var i=0;i<1000;i++){
+
+    FizzBuzzCorrect(i);
+
+}
