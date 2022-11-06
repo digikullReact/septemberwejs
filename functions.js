@@ -201,3 +201,82 @@ function shivamExam(percentage){
 
 
 }
+
+// conditionals 
+//fizzbuzz problem 
+// loops ,for and while --->
+
+
+// You have to write  a function ---->
+// you have to pass a number as an argument 
+// if the number is divisible by 3 ---you have to print fizz
+// if the number is divisible by 5 --->you have to print buzz
+// if the number is divisible by both 3 and 5 you have to print fizzbuzz
+
+// && and || operator 
+
+
+var theday="sunday";
+var weather="rainy";
+//var salaryCredited="yes";
+// if the the day is sunday and weather is sunny then only i will go out 
+/*
+if(theday=="sunday" && weather=="sunny" && salaryCredited=="yes"  ){
+    console.log("i will go out")
+}else{
+    console.log("i will  not go out")
+
+}
+
+*/
+
+function IamgoingOut(){
+    if (theday=="sunday" || weather=="sunny"){
+        console.log("I will go out")
+    }else{
+        console.log("i wont go out")
+    }
+}
+
+IamgoingOut();
+
+
+
+function FizzBuzz(number){
+    if(number % 3==0){
+        console.log("fizz");
+    }
+    else if (number%5==0){
+        console.log("buzz");
+     }
+    if (number%5==0 &&  number % 3==0){
+        console.log("fizzbuzz");
+
+    }
+    
+
+
+
+}
+
+function CheckIf(number){
+    if(number % 3==0){
+        console.log("fizz");
+    }
+     if (number%5==0){
+        console.log("buzz");
+     }
+    if (number%5==0 &&  number % 3==0){
+        console.log("fizzbuzz");
+
+    }
+    
+
+
+
+}
+
+CheckIf(15)
+
+//FizzBuzz(55);
+
