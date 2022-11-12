@@ -159,6 +159,36 @@ console.log(sum);
 sumOfanArray([1,2,3])
 
 
-// write a function to caluclte the product of the array numbers
+// write a function to  caluclte   the product of the array numbers
+
+function productOfarray(arr){
+
+    var product=1;
+
+    for (var i=0;i<arr.length;i++){
+        product=product*arr[i];
+ 
+ 
+     }
+
+     console.log(product);
+
+}
+productOfarray([1,2,3,4,5]);
 
 // Write a function to calculate the sum of  square  of array numbers ---> [1,2,4] . --->1+4+16 ->21
+
+function productOfarray(arr){
+
+    var sumOfSquare=0;
+
+    for (var i=0;i<arr.length;i++){
+        sumOfSquare=sumOfSquare+(arr[i]*arr[i]);
+ 
+ 
+     }
+
+     console.log(sumOfSquare);
+
+}
+productOfarray([1,2,3,4,5,8]);
