@@ -116,9 +116,16 @@ function squaredOfArray(arr){
 
 }
 
+
+
 //squaredOfArray([22,66,99])
 
+// [1,2,3]  [4,5,6];
+// [5,7,9]
+
 function sumOfTwoArr(arr1,arr2){
+
+    
 
     for(var i=0;i<arr1.length;i++){
         console.log(arr1[i]+arr2[i]);
@@ -128,4 +135,30 @@ function sumOfTwoArr(arr1,arr2){
 
 }
 
-sumOfTwoArr([1,2,3],[4,5,6]);
+//sumOfTwoArr([1,2,3],[4,5,6]);
+
+// double --  2 times the value ---
+
+// sq
+
+
+// . ----->find the sum of numbers of an array --> . [1,2,3] -->6 
+// [6,7,8] =21
+
+function sumOfanArray(arr){
+    var sum=0;  // we will store the sum in here
+
+    for (var i=0;i<arr.length;i++){
+       sum=sum+arr[i];
+
+
+    }
+console.log(sum);
+
+}
+sumOfanArray([1,2,3])
+
+
+// write a function to caluclte the product of the array numbers
+
+// Write a function to calculate the sum of  square  of array numbers ---> [1,2,4] . --->1+4+16 ->21
