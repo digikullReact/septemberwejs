@@ -97,5 +97,35 @@ hh();
 // Print the sum of two arrays   --
 // . function(arr1,arr2){ } .   --->sum of array -- [1,2,3] ,[4,5,6] . ---> [5,7,9] ; output 
 
+function DoubleAnArray(arr){
+
+    for(var i=0;i<arr.length;i++){
+        console.log(2*arr[i]);
+    }
+
+}
+
+//DoubleAnArray([1,23,44]);
 
 
+
+function squaredOfArray(arr){
+    for(var i=0;i<arr.length;i++){
+        console.log(arr[i]*arr[i]);
+    }
+
+}
+
+//squaredOfArray([22,66,99])
+
+function sumOfTwoArr(arr1,arr2){
+
+    for(var i=0;i<arr1.length;i++){
+        console.log(arr1[i]+arr2[i]);
+    }
+
+
+
+}
+
+sumOfTwoArr([1,2,3],[4,5,6]);
