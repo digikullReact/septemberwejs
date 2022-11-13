@@ -191,4 +191,4 @@ function productOfarray(arr){
      console.log(sumOfSquare);
 
 }
-productOfarray([1,2,3,4,5,8]);
+productOfarray([1,2,3,4,5,8]);  
