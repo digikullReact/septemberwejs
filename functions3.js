@@ -138,3 +138,5 @@ square(20)
 // if the number is divisble by both 3 and 5 print fizzbuz 
 //   %
 //console.log(4%2==0);
+
+// 
