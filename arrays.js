@@ -70,5 +70,12 @@ function PrintArrayitemsWhileReverse(arr){
     
 
 }
+// for loop -- >prompt --array.push 
 PrintArrayitemsWhileReverse([1,9,0,2,222])
 //PrintArrayitemsReverse([1,2,3,4,99,89])
+
+// variable declaration
+// datatypes (primitive +userdefined)
+//conditionals
+// operators
+//while loop +for loop
