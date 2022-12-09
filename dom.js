@@ -6,6 +6,7 @@ buttonelement.addEventListener("click",function(){
     //alert("button clicked")
    
 htmlelement.style.color="green";
+alert("heheheheh")
 
 
 })
@@ -19,3 +20,17 @@ htmlelement.style.fontFamily="verdana";
 
 })
 // create another button that changes the font family of the heading on its click
+
+//click 
+
+//change 
+
+//keypress
+//keydown
+//keyup
+//scroll
+//mouseover
+//mousenter
+//mouseleave
+
+//change Event

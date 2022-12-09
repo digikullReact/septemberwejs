@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>HEllo</h1>
+    <input  type="text" id="input" style="display: inline-block;width: 450px; height: 30px;">
+
+    <button>
+        For Click 
+    </button>
+
+    <script>
+
+        // js code can go here
+        //change event happens on input field
+        let inputElement=document.getElementById("input");
+        inputElement.addEventListener("change",function(event){
+            
+                let v=event.target.value // would be helpful in react
+               // console.log(inputElement.value);
+        })
+
+       
+
+
+        // You have to   create a input field and ,user will enter the color in it
+        // and as per the color entered in the input field change the color of the heading
+
+
+    </script>
+    
+</body>
+</html>
