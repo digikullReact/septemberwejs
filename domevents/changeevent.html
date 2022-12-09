@@ -7,11 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-<h1>HEllo</h1>
-    <input  type="text" id="input" style="display: inline-block;width: 450px; height: 30px;">
+<h1 id="heading">HEllo</h1>
+    <input  type="text" id="input" style="width: 450px; height: 30px;" placeholder="Color">
+    <input  type="text" id="input2" style="width: 450px; height: 30px;" placeholder="Font Family">
 
-    <button>
-        For Click 
+
+    <button id="btn">
+        Change Font Family
     </button>
 
     <script>
@@ -19,17 +21,31 @@
         // js code can go here
         //change event happens on input field
         let inputElement=document.getElementById("input");
+        let inputElement2=document.getElementById("input2");
+
+        let headingElement=document.getElementById("heading");
+        let btnElement=document.getElementById("btn");
         inputElement.addEventListener("change",function(event){
             
                 let v=event.target.value // would be helpful in react
                // console.log(inputElement.value);
+               headingElement.style.color=v;
         })
+        btnElement.addEventListener("click",function(event){
+            
+            let v=inputElement2.value // would be helpful in react
+            headingElement.style.fontFamily=v;
+
+         
+    })
 
        
 
 
         // You have to   create a input field and ,user will enter the color in it
         // and as per the color entered in the input field change the color of the heading
+
+        // create an input field and type the fontFamily and then change the font family by button click
 
 
     </script>
