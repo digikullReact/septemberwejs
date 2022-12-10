@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="input"/>
+
+    <button id="btn">
+        Add ToDo
+    </button>
+
+    <button id="btn2">
+        Create Image
+    </button>
+
+
+    <ul id="list">
+
+
+    </ul>
+
+    <div id="div">
+
+    </div>
+
+    <script>
+        let btn=document.getElementById("btn");
+        let input=document.getElementById("input");
+        let list=document.getElementById("list");
+
+        btn.addEventListener("click",function(){
+            let value=input.value;
+            //list.innerText=value;
+
+            let element=document.createElement("li");
+            element.innerText=value;
+            list.appendChild(element)
+
+
+
+        })
+
+
+
+        const btn2=document.getElementById("btn2");
+        btn2.addEventListener("click",function(){
+
+            let imageElement=document.createElement("img");
+            imageElement.src="http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcQd6lM4HtInRF3cxw6h3MgUZIIiJCdMgFvXKrhaJrbw61tN3aYpMIVBi0dx0KPv1sdCrLk0sBhPeNVt8m0";
+
+
+            imageElement.style.width="200px";
+            imageElement.style.height="300px";
+            //document.appendChild(imageElement)
+            document.getElementById("div").appendChild(imageElement)
+
+
+        })
+
+    </script>
+    
+</body>
+</html>
