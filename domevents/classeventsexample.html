@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="heading">Hello Sepetmber + October Batch </h1>
+
+    <button id="color" class="btn">
+        Change The Color
+    </button>
+
+    <button id="font" class="btn">
+        Change The Font
+    </button>
+
+
+
+
+    <script>
+        let color = document.getElementById("color");
+        let font = document.getElementById("font");
+
+        let heading = document.getElementById("heading");
+
+        let btnallclass = document.getElementsByClassName("btn")
+        //console.log(btnallclass)
+        for (let i = 0; i < btnallclass.length; i++) {
+            btnallclass[i].addEventListener("click", function (event) {
+                if (event.target.id == "color") {
+                    heading.style.color = "blue";
+
+                } else if (event.target.id == "font") {
+                    heading.style.fontSize = "60px";
+
+                }
+
+
+            })
+
+
+        }
+        /*
+       
+        btnallclass[1].addEventListener("click",function(){
+           
+
+            
+        })
+        */
+
+
+    </script>
+
+</body>
+
+</html>
