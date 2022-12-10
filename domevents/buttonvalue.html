@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="heading"></h1>
+    
+    <input type="text" id="input"/>
+    <button id="one" class="btn">
+        1
+    </button>
+
+    <button id="two" class="btn">
+        2
+    </button>
+
+    <button id="clear">
+        clear
+    </button>
+
+    <script>
+let one =document.getElementById("one");
+let heading=document.getElementById("heading");
+let btns=document.getElementsByClassName("btn")
+let input=document.getElementById("input");
+
+/*
+one.addEventListener("click",function(event){
+  //  let buttonText=event.target.innerText;
+  let buttonText=one.innerText;
+
+    heading.innerText=buttonText
+
+
+})
+*/
+
+document.getElementById("clear").addEventListener("click",function(){
+
+    let currentValue=input.value;
+//debugger;
+        let tempA=currentValue.split("");  // converts a string into an array
+        tempA.pop();  //remove last item from array
+
+        currentValue=tempA.join(""); //  join converts an array to string
+    input.value=currentValue;
+
+
+})
+
+for(let i=0;i<btns.length;i++){
+
+    btns[i].addEventListener("click",function(event){
+        let buttonText=event.target.innerText;
+     if(buttonText!=="clear"){
+     
+ // let buttonText=one.innerText;
+
+    heading.innerText+=buttonText //appending ---->heading.innerText=heading.innerText+buttonText
+    input.value+=buttonText;
+
+     } 
+   
+
+
+})
+}
+
+
+
+
+    </script>
+    
+</body>
+</html>
