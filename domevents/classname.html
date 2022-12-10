@@ -32,13 +32,13 @@
         <div style="padding:30px">
             <input type="number" id="num1" name="" id=""> <br></br>
             <input type="number" id="num2" name="" id=""> <br></br>
-            <button id="add">
+            <button id="add" class="btn">
                 Add Number
     </button> <br></br>
     
-            <button id="subtract">
+            <button id="subtract" class="btn">
                 Subtract Number
-</button> <br></br>
+</button > <br></br>
 
           <span id="output">
 
@@ -56,35 +56,23 @@
 
     <script>
 
-     // JS code for calculator
+        // document.getElementById("id"); // it returns single html element from the dom
+        //document.getElementsByClassName("id");  // it will return multiple elements
+        const buttonElements=document.getElementsByClassName("btn");
 
-     // We have to get relevant js elemennt object from the dom object 
-     let buttonAdd=document.getElementById("add");
-     let buttonSubtract=document.getElementById("subtract");
-
-     let num1=document.getElementById("num1");
+        let num1=document.getElementById("num1");
      let num2=document.getElementById("num2");
      let outbutbox=document.getElementById("output");
      let outbutboxValue=document.getElementById("num2output");
+        //console.log(buttonElements)
+     //   buttonElements.addEventListener()  // not applicable 
 
-/*
-     num2.addEventListener("change",function(){
 
-// We will get the input field values 
-let value1=num1.value;
-let value2=num2.value;
-let sum=Number(value1)+Number(value2);
-
-//document.write()
-//document.write(sum);
-outbutbox.innerText=sum
-
-})
-*/
-
-    buttonAdd.addEventListener("click",function(){
-      // We will get the input field values 
-        let value1=num1.value;
+        for(let i=0;i<buttonElements.length;i++){
+            buttonElements[i].addEventListener("click",function(event){
+                //console.log(event.target.id);
+                if(event.target.id=="add"){
+                    let value1=num1.value;
         let value2=num2.value;
         let sum=Number(value1)+Number(value2);
 
@@ -92,12 +80,8 @@ outbutbox.innerText=sum
         //document.write(sum);
         outbutbox.innerText=sum
         outbutboxValue.value=sum
-        
-      })
-
-      buttonSubtract.addEventListener("click",function(){
-      // We will get the input field values 
-        let value1=num1.value;
+                }else if(event.target.id=="subtract"){
+                    let value1=num1.value;
         let value2=num2.value;
         let sum=Number(value1)-Number(value2);
 
@@ -105,8 +89,17 @@ outbutbox.innerText=sum
         //document.write(sum);
         outbutbox.innerText=sum
         outbutboxValue.value=sum
-        
-      })
+                }
+
+            })
+
+        }
+
+
+
+
+
+   
 
 
 
