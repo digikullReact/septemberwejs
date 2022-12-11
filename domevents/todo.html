@@ -58,12 +58,14 @@
             liElement.addEventListener("click",function(event){
                 //console.log();
                 //event.target actualluy gives you the element on which event is happening
+               // console.log(event.target.tagName)
+                if(event.target.tagName=="BUTTON"){
 
+                    // we will perform the delete operation
+                    let closestLi=event.target.closest("li");  // it gives you the most nearest element 
+                    listElement.removeChild(closestLi);  // i want to remove
 
-                listElement.removeChild(event.target);  // i want to remove
-
-
-                
+                }
             })
             listElement.appendChild(liElement)
             inputElement.value="";
