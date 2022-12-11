@@ -51,7 +51,7 @@
             let liElement=document.createElement("li");
            // liElement.innerText=value;
            // liElement.innerHTML=value+" <button type='button' class='btn btn-danger'>Delete</button>"
-           liElement.innerHTML=`${value}  <button type='button' class='btn btn-danger'>Delete</button>`
+           liElement.innerHTML=`${value}  <button type='button' class='btn btn-danger' name="delete">Delete</button> <button type='button' name="edit" class='btn btn-danger'>Edit</button>`
 
             liElement.className="list-group-item";
             liElement.id=value;
@@ -59,12 +59,14 @@
                 //console.log();
                 //event.target actualluy gives you the element on which event is happening
                // console.log(event.target.tagName)
-                if(event.target.tagName=="BUTTON"){
+                if(event.target.tagName=="BUTTON" && event.target.name=="delete"){
 
                     // we will perform the delete operation
                     let closestLi=event.target.closest("li");  // it gives you the most nearest element 
                     listElement.removeChild(closestLi);  // i want to remove
 
+                }else{
+                    // do the edit part in here
                 }
             })
             listElement.appendChild(liElement)
