@@ -54,7 +54,8 @@
            liElement.innerHTML=`${value}  <button type='button' class='btn btn-danger' name="delete">Delete</button> <button type='button' name="edit" class='btn btn-danger'>Edit</button>`
 
             liElement.className="list-group-item";
-            liElement.id=value;
+            liElement.dataset.something=value;
+          
             liElement.addEventListener("click",function(event){
                 //console.log();
                 //event.target actualluy gives you the element on which event is happening
@@ -66,7 +67,9 @@
                     listElement.removeChild(closestLi);  // i want to remove
 
                 }else if(event.target.tagName=="BUTTON" && event.target.name=="edit"){
-                
+                    let closestLi=event.target.parentElement;  // it gives you the most nearest element 
+                    inputElement.value=closestLi.dataset.something;
+
                     // do the edit part in here
                 }
             })
