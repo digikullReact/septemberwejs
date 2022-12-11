@@ -65,7 +65,8 @@
                     let closestLi=event.target.closest("li");  // it gives you the most nearest element 
                     listElement.removeChild(closestLi);  // i want to remove
 
-                }else{
+                }else if(event.target.tagName=="BUTTON" && event.target.name=="edit"){
+                
                     // do the edit part in here
                 }
             })
