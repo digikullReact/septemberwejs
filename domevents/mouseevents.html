@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="heading">Hello World</h1>
+    <img style="width: 200px;height:200px" src="https://www.techsmith.com/blog/wp-content/uploads/2020/11/TechSmith-Blog-ExtractText.png" id="image"
+    alt="">
+    
+    <span>
+        
+    </span>
+
+    <script>
+        let heading=document.getElementById("heading");
+        let image=document.getElementById("image");
+
+        image.addEventListener("mouseover",function(event){
+
+    var cursorX = event.pageX;
+    var cursorY = event.pageY;
+    console.log(cursorX,cursorY)
+
+    if(cursorY>200){
+        image.style.height="500px";
+            image.style.width="500px";
+
+    }
+
+           
+            
+
+        })
+
+        image.addEventListener("mouseleave",function(){
+
+image.style.height="200px";
+image.style.width="200px";
+
+
+})
+        /*
+        heading.addEventListener("mouseenter",function(){
+            heading.style.color="red";
+        })
+
+        heading.addEventListener("mouseleave",function(){
+            heading.style.color="green";
+        })
+
+        heading.addEventListener("mouseover",function(){
+            heading.style.color="brown";
+        })
+        */
+
+
+
+
+    </script>
+</body>
+</html>
