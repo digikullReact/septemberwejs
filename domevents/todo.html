@@ -69,6 +69,18 @@
                 }else if(event.target.tagName=="BUTTON" && event.target.name=="edit"){
                     let closestLi=event.target.parentElement;  // it gives you the most nearest element 
                     inputElement.value=closestLi.dataset.something;
+                    btnElement.innerText="Edit";
+
+                    btnElement.addEventListener("click",function(event){
+
+                        // this function will deal specifically with th edit part
+                       // debugger;
+                      // let closestLi=event.target.parentElement;
+                       //closestLi.innerText=inputElement.value
+
+                       //return;
+
+                    })
 
                     // do the edit part in here
                 }
