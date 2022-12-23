@@ -24,7 +24,7 @@
 
      foo( function op(p){
 
-        console.log("p",p)
+       // console.log("p",p)
 
      } ,function bp(){
 
@@ -37,14 +37,96 @@
 
      let gg=[1,2,3,4,4,5,55,9];
      gg.forEach(function (ele,i){
-        console.log(ele,i);
+       // console.log(ele,i);
 
      })
 
      // Given an array ,you have to double all the items of an array using forEach loop and return the output
+     let doubleArr=[];
+     gg.forEach(function (ele,i){
+        doubleArr.push(2*ele);
 
-     let 
+     })
+     //console.log(doubleArr) 
 
+     // map function  returns a copy of original array with the logic applied
+
+     // map function is used to modify the items of an array with some logic 
+     // and it returns a new array
+     let ret= gg.map(function(ele){
+       return  2*ele
+
+     })
+
+     //console.log("From map function",ret)
+     //console.log("From map function original",gg)
+
+     // ["a","b","c","d","e"]--->convert them all uper case using map function
+     let f=["a","b","c","d","e"];
+     let y=f.map(function(r){
+     return r.toLocaleUpperCase();
+
+
+     })
+
+     //console.log(y);
+
+     //let arr=[1,2,3,4,54,78,89,88] ;; i want you to return all the elemnst that are divisible by 2 in an array
+
+
+     let arrNum=[1,2,3,4,54,78,89,88]
+     let res=[];
+
+     arrNum.forEach(function(ele){
+
+ if(ele%2==0){
+    res.push(ele);
+ }
+
+
+     })
+
+console.log(res);
+//  let arrNum=[1,2,3,4,54,78,89,88]
+// map function ensures that length of input array is equals to the output array
+console.log(
+     arrNum.map(function(ele){
+        return ele%2==0;
+/*
+ if(ele%2==0){
+   return ele;
+ }
+ */
+
+ //return 9;
+
+     }))
+
+     // filter
+
+     console.log(
+     arrNum.filter(function(ele){
+
+        return ele%2==0; // ----if(ele%2==0){ return ele}
+
+
+ //return 9;
+
+     }))
+
+     // you have to filter out all the elemenst form array that starts with a
+     let str=["abc","bnn","aqua","allahabad","hjj"];
+
+     console.log(
+        str.filter(function(ele){
+            return ele.startsWith("a");
+        
+    })
+
+
+ 
+
+     )
     </script>
 
     
