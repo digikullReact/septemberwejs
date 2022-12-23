@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+     // callbacks are function which are passed as an arguemnt to another function
+// let a =7
+// let b=8
+     function foo(a,b){  // a and b are parameters
+       //console.log(a,b);
+       a(9); //-->this would be a function call of op
+       b();// -->this would be the call of function bp();
+     }
+
+     //foo(7,8) // // function call has  7 and 8 are arguments 
+
+     foo( function op(p){
+
+        console.log("p",p)
+
+     } ,function bp(){
+
+     })
+     // A function which takes a function as an argument is called as a higher order function
+
+     /// higher order array function   these methods are only applicable on arrays
+
+     // forEach --->higher order function
+
+     let gg=[1,2,3,4,4,5,55,9];
+     gg.forEach(function (ele,i){
+        console.log(ele,i);
+
+     })
+
+     // Given an array ,you have to double all the items of an array using forEach loop and return the output
+
+     let 
+
+    </script>
+
+    
+</body>
+</html>
