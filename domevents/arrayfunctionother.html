@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        let arr=[1,2,3,4,5,6,6];
+        // Sumn all the elements of an array
+        let sum=0;
+        for(let i=0;i<arr.length;i++){
+             sum=sum+arr[i];
+        }
+
+        console.log(sum);
+
+        // Array reduce
+
+         let finalSum= arr.reduce(function(sum,ele){
+            return sum=sum+ele;
+
+          } , 0)
+
+          console.log("Sum by reduce",finalSum)
+
+          let arr2=[1,2,3,88,78,76] ;; // we have to find all the even numbers from this array
+
+
+          let even=[];
+          
+          arr2.forEach(function(ele){
+              if(ele%2==0){
+                even.push(ele);
+              }
+          })
+
+
+          console.log("even numbers",even);
+          // reduce 
+          const red=arr2.reduce(function(even,ele){
+            if(ele%2==0){
+                even.push(ele);
+              }
+              return even;
+
+          } ,[] )
+
+          console.log(" reduce even numbers",even);
+
+
+         // --input ---> // ----> ["HEllo","World","tata","dodo","yyyuu"] //Output ---> -HElloWorldtatadodoyyyuu"
+
+
+    </script>
+    
+</body>
+</html>
