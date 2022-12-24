@@ -53,8 +53,32 @@
           console.log(" reduce even numbers",even);
 
 
-         // --input ---> // ----> ["HEllo","World","tata","dodo","yyyuu"] //Output ---> -HElloWorldtatadodoyyyuu"
+         // --input ---> // ----> ["HEllo","World","tata","dodo","yyyuu"] //Output ---> 
+//-HElloWorldtatadodoyyyuu"
 
+         let strArr=["HEllo","World","tata","dodo","yyyuu"] ;
+
+         // for Each
+
+         let str="";
+
+         strArr.forEach(function(ele){
+            str=str+ele;
+
+         })
+
+         console.log("String",str);
+
+         let rt=strArr.reduce(function(str,ele){
+           return str+ele;
+           // return str;
+
+         } ,""  )
+         console.log("String22",rt);
+
+
+
+       
 
     </script>
     
