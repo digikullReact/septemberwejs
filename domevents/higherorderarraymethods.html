@@ -130,7 +130,7 @@ console.log(
 
      // homeowrk task
 // return all the elemnets from this array which have age greater than 20
-     [
+    let objArr=[
   {
     "_id": "63a5dab63c30c772978f0e58",
     "age": 87,
@@ -172,6 +172,56 @@ console.log(
     "address": "540 Homecrest Avenue, Campo, Delaware, 8899"
   }
 ]
+
+// . filtered array will always be less than or equal to the original array 
+// forEach approach
+let r8=[];
+objArr.forEach(function(ele){
+if(ele["age"]>20){
+  //return ele;
+  r8.push(ele);
+}
+
+})
+
+// 
+
+
+console.log("ForEach",r8)
+
+let r7=objArr.filter(function(ele){
+  /*
+if(ele["age"]>20){
+  //return ele;
+  return ele;
+}
+*/
+return (ele["age"]>20);
+
+})
+console.log("Filter Method",r7)
+
+// Using filter
+
+
+function CallApi(){
+
+  fetch('https://fakestoreapi.com/products')
+  .then((response) => response.json())
+  .then((objArr) => {
+
+   // Write the whole code
+
+
+
+  });
+
+
+  CallApi();
+
+
+}
+
     </script>
 
     
