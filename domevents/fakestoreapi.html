@@ -46,7 +46,7 @@ function CallApi(){
   .then((response) => response.json())
   .then((objArr) => {
 
-    const tbody=document.getElementById("tr");
+    const tbody=document.getElementById("tbody");
    // Write the whole code
    objArr.forEach(function(ele){
 
@@ -54,14 +54,14 @@ function CallApi(){
     const td1=document.createElement("td");
     td1.innerText=ele.description
     const td2=document.createElement("td");
-    td2.innerHTML=`<img src=${ele.image} />`
+    td2.innerHTML=`<img width="200px" height="200px" src=${ele.image} />`
 
     tr.appendChild(td1);
     tr.appendChild(td2);
 
 
 
-   
+    tbody.appendChild(tr);
     
    })
 
