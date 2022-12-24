@@ -79,6 +79,80 @@
 
 
        
+         // Given an array of string --
+
+// Input --  ["p","q",1,1,2]
+//  ["q","p",1,1,2]
+
+function rotate(arr,value){
+
+for(let i=0;i<arr.length;i++){
+  if(arr[i]==value){
+    let s1=arr.slice(0,i);
+    let s2=arr.slice(i,arr.length);
+      
+
+    return [...s2,...s1];
+
+
+    
+  }
+
+
+  
+}
+}
+
+console.log(rotate(["p","rs","t","q",1,1,2],"q"))
+
+// reverse an array
+let arrk=[1,2,3,45,8];
+console.log(arrk.reverse())
+
+// splice 
+
+let arr=[1,2,3,4,5];
+console.log(arr.splice(0,4));
+
+// in splice the first argument is the index of element of array and the second argument is the number of items to be deleted
+// it modifies the original array as well 
+console.log(arr);
+
+
+// try to do array rotate problem with splice -->
+let arrkf=[1,2,43,"q","rs","t"]
+
+// ["q","rs","t",1,2,43]
+
+function rotateWithSplice(arr,value){
+  for(let i=0;i<arr.length;i++){
+    if(value==arr[i]){
+      let firstHalf=arr.splice(0,i);
+      return [...arr,...firstHalf]
+      
+    }
+    
+  }
+  
+}
+
+//console.log(rotateWithSplice(arrk,"q"))
+
+
+
+// spread syntax ---->
+
+//spread operator //spread synatx
+//arrays ,Set ,Map ,string ,object literals
+let r=[2,3,4,45];
+let t=["a","b","c"];
+console.log(...r);
+
+let y=[...r];
+console.log(y);
+
+let yu=[...r,...t];
+console.log(yu);
 
     </script>
     
