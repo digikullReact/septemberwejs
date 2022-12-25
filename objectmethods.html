@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1 id="heading">Hello</h1>
+
+    <script>
+
+        // Array concat -->it joins two array  and returns a new array by combining them
+        let r=[1,2,3,4,5];
+        let c=[6,7,8,9,10];
+        //console.log(r.concat(c));
+        //console.log(c,r);
+
+
+        // forEach 
+        // filter
+        //map
+        //reduce
+        //slice
+        //splice
+        //join
+        //reverse
+        //concat
+        // push 
+        
+        //spread syntax
+        // string ---split ,lowerCase ,upperCase
+
+        // push -->it puts an item at the end of an array
+        let y=["a","b","c"];
+        //y.push("alpha");--->result --["a","b","c","alpha"]
+        //unshit -->it puts an item in the beginning of an array 
+        //y.unshift("alpha");--->["alpha","a","b","c"]
+        // pop method -->it removes last item of an array  and returns the last item
+       // let u=y.pop()
+        //console.log(u,"resultant array",y);  //--> y will become -->["a","b"]
+
+        // shift is just reverse of pop it removes the item from beginning from left of an array
+        //console.log(y.shift(),"resultant array",y);
+        // push --->adds item at the end of an array 
+        // unshift --->adds item at the beginning of an array 
+        // pop -->removes item from end of an array 
+        // shift -->removes item from beginning of an array
+        // includes -->checks if item exists in the array of not 
+        // indexOf --->checks if item exists in an array ,and if it exists it returns the index or position of the item 
+        // other wise returns -1
+        //let u=[8,9,0];
+        //console.log(u.indexOf(88));
+
+        //let str="ii";
+       // console.log(c.concat("8888","9999999")) // if you add concat to array with single item it behaves like push 
+
+       // Objects methods --->
+
+       // Object.values();
+       // Object.keys();
+       // Object.entries();
+       // Object.assign();
+       // shallow and deep copy
+       let k={key:1,age:20,name:"shubham" ,value:function(){}}
+       //let j={"value":"heuuu"}  // JSON.parse()
+       // Object.values() k.values()
+       console.log(Object.values(k))  // it returns an array of all the values of object literal
+       console.log(Object.keys(k))  // it returns an array of all the keys of object literal
+
+       console.log(Object.entries(k))  // it returns an array of all the keys of object literal
+
+/*
+       document.getElementById("heading").addEventListener("click",function(event){
+         console.log(Object.values(window)) 
+
+       })
+       */
+        </script>
+    
+
+
+</body>
+</html>
