@@ -77,6 +77,52 @@
 
        })
        */
+
+       //let c={name:"Anchal"};
+//let k=c;
+//k.name="Akif";
+
+//console.log(c);// {"name":"Anchal"};
+
+//console.log(k); // {"name":"Akif"};
+
+
+let yd=[1,2,3,4,5,7];
+let j=y;
+
+j.push(99);
+
+console.log(yd);
+console.log(j);
+
+//let c={name:"Anchal"};
+//let k=c;
+//k.name="Akif";
+
+//console.log(c);// {"name":"Anchal"};
+
+//console.log(k); // {"name":"Akif"};
+
+
+//let y=[1,2,3,4,5,7];
+//let j=y; // shallow copy
+//let j=JSON.parse(JSON.stringify(y));  // deep copy
+
+//j.push(99);
+
+// IMPORTANT--->
+
+//console.log(y);
+//console.log(j);
+// Shallow copy
+let v={name:"Shubham",age:19,address:{city:"kanpur"}};
+let h={}
+Object.assign(h,v)
+//console.log()
+h.name="joy";
+h.address.city="Mumbai";
+console.log(v);
+console.log(h);
         </script>
     
 
